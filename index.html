@@ -15,15 +15,22 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="//rawgithub.com/Caged/d3-tip/master/examples/example-styles.css">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="js/tool-tip.js"></script>
 </head>
 <body>
 
+    <div id="random" style="width: 1400px; height: 700px;"></div>
     <nav class="navbar navbar-default"></nav>
-    <svg width="1400" height="700"></svg>
+    
+    <svg style="z-index: 0!important" width="1400" height="700"></svg>
 
-<script src="https://d3js.org/d3.v4.min.js"></script>
-<script src="js/main.js"></script>
-<script src="js/tool-tip.js"></script>
 
+<script type="module">
+    import { Graph } from './js/main.js'
+    
+    console.log(Graph)
+    Graph()
+</script>
 
 </body>
